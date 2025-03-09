@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(198, 127, 190);
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.day {
+    background:whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.day h3 {
+    margin-top: 0;
+}
+
+.tasks {
+    min-height: 100px;
+}
+
+.add-task {
+    width: 100%;
+    margin-top: 5px;
+}
+.delete-task {
+    margin-left: 10px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.complete-task {
+    margin-left: 10px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
